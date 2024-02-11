@@ -1,5 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import LeftSideBar from "./Components/LeftSideBar";
+import TopNavBar from "./Components/TopNavBar";
+import Settings from "./Components/Settings";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +14,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} bg-[#ebeef2] relative`}>
+        <LeftSideBar />
+        <TopNavBar />
+        <Settings />
+        {children}
+      </body>
     </html>
   );
 }
