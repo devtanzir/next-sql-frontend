@@ -1,15 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 
 const DefaultCard = ({
   img,
+  className = "",
   cardTitle = "Dua's Importance",
   SubNumber = "1",
   DausNumber = "21",
+  ...props
 }) => {
   return (
     <>
-      <div className="default-card-section">
+      <div {...props} className={`default-card-section ${className}`}>
         <div className="icon-svg">
           <div className="svg-logo">
             <Image

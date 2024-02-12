@@ -3,6 +3,7 @@ import "./globals.css";
 import LeftSideBar from "./Components/LeftSideBar";
 import TopNavBar from "./Components/TopNavBar";
 import Settings from "./Components/Settings";
+import AllDuaTitle from "./Components/AllDuaTitle";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
         <TopNavBar />
         <Settings />
         {children}
+        <AllDuaTitle />
       </body>
     </html>
   );
