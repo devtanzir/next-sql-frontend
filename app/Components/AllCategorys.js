@@ -3,18 +3,6 @@ import axios from "axios";
 
 import { useEffect, useState } from "react";
 
-import duar_gurutto from "@/public/Category-icons/duar_gurutto.svg";
-
-// import zikirer_fozilot from "@/public/Category-icons/zikirer_fozilot.svg";
-// import dua_kobuler_somoy from "@/public/Category-icons/dua_kobuler_somoy.svg";
-// import jader_dua_kobul_hoy from "@/public/Category-icons/jader_dua_kobul_hoy.svg";
-// import sokal_sondha from "@/public/Category-icons/sokal_sondha.svg";
-// import ghum from "@/public/Category-icons/ghum.svg";
-// import poshak from "@/public/Category-icons/poshak.svg";
-// import bari from "@/public/Category-icons/bari.svg";
-// import toilet from "@/public/Category-icons/toilet.svg";
-// import azan_ikamot from "@/public/Category-icons/azan_ikamot.svg";
-
 import React from "react";
 import DefaultCard from "./DefaultCard";
 import SubTitle from "./subTitle";
@@ -83,7 +71,7 @@ const AllCategorys = () => {
               index === activeIndex ? "active" : ""
             }`}
             onClick={() => handleClick(index)}
-            img={duar_gurutto}
+            img={`https://api-backend-9zbn.onrender.com/${item.cat_icon}.svg`}
             cardTitle={item.cat_name_en}
             SubNumber={item.no_of_subcat}
             DausNumber={item.no_of_dua}

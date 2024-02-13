@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 
 const DefaultCard = ({
@@ -16,6 +16,8 @@ const DefaultCard = ({
           <div className="svg-logo">
             <Image
               src={img}
+              width={40}
+              height={40}
               alt="card logo"
               className="card-title-logo"
             ></Image>

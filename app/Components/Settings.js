@@ -1,7 +1,6 @@
 import React from "react";
 import LeanguageCard from "./LeanguageCard";
 import Font from "@/public/Settings-icon/font.svg";
-// import colorFont from "@/public/Settings-icon/colorFont.svg";
 import General from "@/public/Settings-icon/general.svg";
 import Language from "@/public/Settings-icon/language.svg";
 

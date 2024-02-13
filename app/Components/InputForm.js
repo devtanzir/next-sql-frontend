@@ -13,7 +13,7 @@ export default function InputForm({ children, className = "", ...props }) {
     <>
       <input
         id="filerted_catList"
-        class={`h-12 default-input placeholder:text-gray-500 placeholder:text-sm border-[1px] block bg-white w-full rounded-md shadow-sm
+        class={`h-12 default-input placeholder:text-gray-500 placeholder:text-sm border-[1px] block bg-white rounded-md shadow-sm
         sm:text-sm ${className}`}
         type="text"
         {...props}

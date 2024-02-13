@@ -3,7 +3,6 @@ import Image from "next/image";
 import HomeSvg from "@/public/nav-Icons/home.svg";
 import Link from "next/link";
 import alldua from "@/public/nav-Icons/alldua.svg";
-import memorize from "@/public/nav-Icons/memorize.svg";
 import bookmark from "@/public/nav-Icons/bookmark.svg";
 import ruqyah from "@/public/nav-Icons/ruqyah.svg";
 import DuaInfo from "@/public/nav-Icons/dua-info.svg";
@@ -13,7 +12,7 @@ import books from "@/public/nav-Icons/books.svg";
 const LeftSideBar = () => {
   return (
     <>
-      <div className="left-navbar flex flex-col justify-between items-center">
+      <div className="left-navbar shadow-md">
         <div className="top-logo">
           <Link href="/" className="dua-icon">
             <Image src={DuaLogo} alt="Nav Logo"></Image>

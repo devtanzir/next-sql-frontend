@@ -4,13 +4,14 @@ import Image from "next/image";
 import Avatar from "@/public/User-profile/avatar-default.svg";
 import arrow from "@/public/User-profile/downarrow.svg";
 import search from "@/public/search-icon.svg";
-// import Search from "@/public/User-profile/search.svg";
-
+import Settings from "@/public/Settings-icon/settings.svg";
+import Navbar from "./navbar";
 const TopNavBar = () => {
   return (
     <>
       <div className="header-box flex justify-between items-center">
         <div className="w-[72vw]  flex justify-between items-center">
+          <Navbar />
           <div className="header-logo">
             <h3 className="text-[25px]">Duas Page</h3>
           </div>
@@ -23,6 +24,7 @@ const TopNavBar = () => {
           </div>
         </div>
         <div className="header-user">
+          <Image className="Settings-icon" src={Settings} alt="Avater"></Image>
           <Image src={Avatar} alt="Avater"></Image>
           <Image src={arrow} alt="Arrow"></Image>
         </div>
