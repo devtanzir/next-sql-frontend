@@ -14,7 +14,11 @@ const Navbar = () => {
   return (
     <div>
       <div className="navIcon">
-        <Image onClick={handleClick} src={isOpen ? cross : bar}></Image>
+        <Image
+          onClick={handleClick}
+          src={isOpen ? cross : bar}
+          alt="Hamburger bar"
+        ></Image>
       </div>
     </div>
   );
