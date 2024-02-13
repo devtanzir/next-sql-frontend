@@ -33,6 +33,7 @@ const SubTitle = () => {
         if (item.id >= 1 && item.id <= 7) {
           return (
             <div
+              key={item.id}
               className={`sub-titles pt-3 pb-3`}
               onClick={() => handleClick(index)}
             >

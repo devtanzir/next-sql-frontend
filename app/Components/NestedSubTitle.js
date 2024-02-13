@@ -27,7 +27,7 @@ const NestedSubTitle = () => {
       {subtitle.map((item) => {
         if (item.id >= 1 && item.id <= 3) {
           return (
-            <div className="mb-1 relative">
+            <div key={item.id} className="mb-1 relative">
               <span className="absolute left-0">
                 <Image src={duaArrow} alt="duaArrow"></Image>
               </span>
