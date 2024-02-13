@@ -5,7 +5,7 @@ import Avatar from "@/public/User-profile/avatar-default.svg";
 import arrow from "@/public/User-profile/downarrow.svg";
 import search from "@/public/search-icon.svg";
 import Settings from "@/public/Settings-icon/settings.svg";
-import Navbar from "./navbar";
+import Navbar from "./Navbar";
 const TopNavBar = () => {
   return (
     <>
